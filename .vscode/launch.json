@@ -6,6 +6,39 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch LeapYear",
+      "request": "launch",
+      "mainClass": "LeapYear"
+    },
+    {
+      "type": "java",
+      "name": "Launch App",
+      "request": "launch",
+      "mainClass": "App"
+    },
+    {
+      "type": "java",
+      "name": "Launch toDoList",
+      "request": "launch",
+      "mainClass": "toDoList.toDoList",
+      "projectName": "toDoList-app"
+    },
+    {
+      "type": "java",
+      "name": "Launch Calculator",
+      "request": "launch",
+      "mainClass": "calculator.app.src.main.java.calculator.Calculator",
+      "projectName": "java_intro_fd59759d"
+    },
+    {
+      "type": "java",
+      "name": "Launch Calculator",
+      "request": "launch",
+      "mainClass": "Calculator",
+      "projectName": "java_intro_fd59759d"
+    },
+    {
+      "type": "java",
       "name": "Launch Current File",
       "request": "launch",
       "mainClass": "${file}"
