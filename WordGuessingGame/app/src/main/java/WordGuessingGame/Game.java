@@ -1,16 +1,14 @@
 package WordGuessingGame;
 
-import java.util.Random;
 
 public class Game {
   
-  static final String[] DICTIONARY = {"MAKERS", "CANDIES", "DEVELOPER", "LONDON"};
   String word; 
   Integer attempts = 10;
   StringBuilder wordString = new StringBuilder();
 
-  Game() {
-    this.word = getRandomWordFromDictionery();
+  Game(WordChoser choser ) {
+    this.word = choser.getRandomWordFromDictionery();
   }
 
   public String getWordToGuess() {
@@ -28,11 +26,9 @@ public class Game {
       return attempts;
   }
 
-  public String getRandomWordFromDictionery() {
-    Integer length = DICTIONARY.length;
-    Random x = new Random();
-    return DICTIONARY[x.nextInt(length)];
+  public Integer TakeGuess() {
+    attempts = attempts - 1;
+    return attempts;
   }
-
   
 }
